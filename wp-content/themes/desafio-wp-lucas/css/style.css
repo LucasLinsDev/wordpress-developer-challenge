@@ -1091,7 +1091,6 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 26px;
-  margin-top: 92px;
 }
 
 .hero_content h1 {
