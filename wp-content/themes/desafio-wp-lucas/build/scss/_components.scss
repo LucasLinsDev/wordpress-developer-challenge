@@ -1,5 +1,6 @@
 .tag-content {
-  width: 120px;
+  width: max-content;
+  padding: 12px;
   height: 36px;
   background: white;
   border-radius: 3px;
@@ -59,11 +60,14 @@
 }
 .card_image_blog {
   height: 280px;
+  img {
+    width: 100%;
+  }
   @include responsive(s) {
     height: 230px;
     overflow: hidden;
     img {
-      width: 100% !important;
+      width: 100%;
     }
   }
 }

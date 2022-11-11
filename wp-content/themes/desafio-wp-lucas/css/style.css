@@ -531,7 +531,10 @@ header {
 }
 
 .tag-content {
-  width: 120px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px;
   height: 36px;
   background: white;
   border-radius: 3px;
@@ -672,13 +675,17 @@ header {
   height: 280px;
 }
 
+.card_image_blog img {
+  width: 100%;
+}
+
 @media screen and (max-width: 540px) {
   .card_image_blog {
     height: 230px;
     overflow: hidden;
   }
   .card_image_blog img {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
@@ -744,7 +751,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  martin-top: 96px;
+  margin-top: 96px;
 }
 
 @media screen and (max-width: 540px) {
