@@ -1,0 +1,38 @@
+.btn-red {
+  width: 310px;
+  height: 64px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  background: var(--red-dark);
+  @include font-config(18px, 18px, 12px, 500);
+
+  @include responsive(s) {
+    width: 182px;
+    height: 38px;
+  }
+  @include hover-config();
+}
+
+.btn-silver {
+  width: max-content;
+  height: 64px;
+  padding: 0px 30px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  background: #4d5f7a;
+  @include font-config(18px, 18px, 12px, 500);
+
+  @include responsive(s) {
+    width: 182px;
+    height: 38px;
+  }
+  @include hover-config();
+}

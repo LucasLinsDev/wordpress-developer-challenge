@@ -1,0 +1,19 @@
+.page_not_found {
+  height: 40vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    color: var(--red-dark);
+    @include font-config(72px, 72px, 42px, 900);
+  }
+  h2 {
+    color: white;
+    @include font-config(48px, 48px, 26px, 900);
+  }
+  p {
+    color: #8896ab;
+    @include font-config(20px, 20px, 20px, 900);
+  }
+}

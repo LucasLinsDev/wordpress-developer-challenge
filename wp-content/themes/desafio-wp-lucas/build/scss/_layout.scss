@@ -1,0 +1,104 @@
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+@mixin responsive($device) {
+  @if $device == xl {
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == l {
+    @media screen and (max-width: $container-l) {
+      @content;
+    }
+  } @else if $device == m {
+    @media screen and (max-width: $container-m) {
+      @content;
+    }
+  } @else if $device == s {
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  }
+}
+
+@mixin margin-config($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin font-config($desktop, $tablet, $mobile, $weight) {
+  font-size: $desktop;
+  font-weight: $weight;
+
+  @include responsive(l) {
+    font-size: $tablet;
+  }
+
+  @include responsive(s) {
+    font-size: $mobile;
+  }
+}
+
+@mixin hover-config() {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.row {
+  display: flex;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.container {
+  max-width: $container-xl;
+  width: 100%;
+  margin: 0 auto;
+  padding: 96px 24px;
+  height: auto;
+
+  @include responsive(l) {
+    padding: 60px 24px;
+  }
+  @include responsive(m) {
+    padding: 50px 24px;
+  }
+  @include responsive(s) {
+    padding: 36px 24px;
+  }
+}
+
+.cards_container {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 96px 24px;
+  flex-direction: column;
+
+  @include responsive(s) {
+    padding: 0px 24px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  row-gap: 50px;
+
+  @include responsive(m) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.flex-item-1 {
+  flex: 1 1 360px;
+
+  @include responsive(s) {
+    flex: 1 1 100px;
+  }
+}

@@ -1,0 +1,12 @@
+.blog_header {
+  h1 {
+    color: white;
+    @include font-config(40px, 40px, 32px, 900);
+  }
+  p {
+    color: white;
+    line-height: 180%;
+    @include font-config(20px, 20px, 18px, 900);
+    max-width: 80%;
+  }
+}

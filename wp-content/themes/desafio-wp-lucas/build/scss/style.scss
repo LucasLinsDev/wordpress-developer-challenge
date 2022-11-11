@@ -1,0 +1,42 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+}
+@import "variables";
+@import "fonts";
+@import "hover";
+@import "spacing";
+@import "spacing";
+@import "layout";
+@import "swipper";
+@import "button";
+@import "menu";
+@import "components";
+@import "archive";
+@import "blog";
+@import "single";
+@import "page_not_found";
+
+@import "hero";
+@import "footer";
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Circular Sporify", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--black-normal);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}

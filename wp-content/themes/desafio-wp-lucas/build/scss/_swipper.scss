@@ -1,0 +1,7 @@
+.swiper-slide {
+  max-width: 280px;
+
+  @include responsive(s) {
+    max-width: 149px;
+  }
+}

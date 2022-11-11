@@ -1,0 +1,26 @@
+.archive_container {
+  display: flex;
+  gap: 50px;
+  martin-top: 96px;
+  @include responsive(s) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.archive-description-page {
+  h1 {
+    color: var(--red-dark);
+    @include font-config(40px, 40px, 23px, 900);
+  }
+  p {
+    max-width: 602px;
+    color: white;
+    @include font-config(18px, 18px, 12px, 900);
+    line-height: 200%;
+
+    @include responsive(s) {
+      max-width: 90%;
+    }
+  }
+}
