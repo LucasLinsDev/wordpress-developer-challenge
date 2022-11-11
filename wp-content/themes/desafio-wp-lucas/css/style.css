@@ -760,7 +760,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  margin-top: 96px;
 }
 
 @media screen and (max-width: 540px) {

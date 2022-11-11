@@ -211,6 +211,15 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
 .swiper-slide {
   max-width: 280px;
 }
@@ -746,7 +755,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  margin-top: 96px;
 }
 
 @media screen and (max-width: 540px) {
